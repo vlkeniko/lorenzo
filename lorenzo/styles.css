@@ -1,0 +1,87 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color:rgb(250, 250, 250);
+}
+
+input[type=text] {
+    width: 200px;
+    padding: 4px 6px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+label {
+    float: top;
+}
+
+input {
+    display: block;
+}
+
+.formbox {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    max-height: 99vh;
+    
+}
+
+.forms {
+
+max-width: 400px;
+    padding: 15px;
+    margin-top: 10px;
+    
+}
+
+#feladas {
+    background-color: rgb(250, 201, 110);
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 20%;
+}
+
+#atvetel {
+    background-color: rgb(148, 148, 249);
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 20%;
+}
+
+.button {
+    border: none;
+    
+    background-color:  rgb(250, 201, 110);
+    padding: 10px;
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+.button:hover {
+    box-shadow: 2px 3px rgb(86, 86, 86);
+    
+    background-color:  rgb(250, 201, 110);
+}
+
+.button:active {
+    transform: translateY(4px);
+    box-shadow: 2px 3px rgb(86, 86, 86);
+    background-color: rgb(236, 236, 236);
+}
+
+.insidecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.f{
+    margin-left: 0;
+    margin-right: 20%;
+    margin-top: 15%;
+   
+}

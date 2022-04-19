@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <title>LorenzoLogistic</title>
+</head>
+
+<body>
+
+    <header>
+    </header>
+
+    <main>
+        <form>
+            <div class="formbox">
+                <!--Feladás----------------------------------------------->
+                <div id=feladas class="forms">
+                    <h2>Feladás helyszíne: </h2>
+                    <div class="insidecontainer">
+                        <div class="inside">
+                            <label for="feladasOrszag">Ország</label>
+                            <input type="text" id="countries" list="countries" name="feladasOrszag">
+
+                            <label for="feladasVaros">Város</label>
+                            <input type="text" id="feladasVaros" name="feladasVaros">
+
+                            <label for="feladasMegye">Megye</label>
+                            <input type="text" id="feladasMegye" name="feladasMegye">
+                        </div>
+                        <div class="inside">
+                            <label for="feladasUtca">Utca, házszám</label>
+                            <input type="text" id="feladasUtca" name="feladasUtca">
+
+                            <label for="feladasIr">Irányítószám</label>
+                            <input type="text" id="feladasIr" name="feladasIr">
+
+                            <label for="feladasEmelet">Emelet, kapu, ajtó...</label>
+                            <input type="text" id="feladasEmelet" name="feladasEmelet">
+                        </div>
+                    </div>
+                </div>
+                <!--Átvétel----------------------------------------------->
+                <div id=atvetel class="forms">
+                    <h2>Átvétel helyszíne: </h2>
+                    <div class="insidecontainer">
+                        <div class="inside">
+                            <label for="atvetelOrszag">Ország</label>
+                            <input type="text" id="atvetelOrszag" name="atvetelOrszag">
+
+                            <label for="atvetelVaros">Város</label>
+                            <input type="text" id="atvetelVaros" name="atvetelVaros">
+
+                            <label for="atvetelMegye">Megye</label>
+                            <input type="text" id="atvetelMegye" name="atvetelMegye">
+                        </div>
+                        <div class="inside">
+                            <label for="atvetelUtca">Utca, házszám</label>
+                            <input type="text" id="atvetelUtca" name="atvetelUtca">
+
+                            <label for="atvetelIr">Irányítószám</label>
+                            <input type="text" id="atvetelIr" name="atvetelIr">
+
+                            <label for="atvetelEmelet">Emelet, kapu, ajtó...</label>
+                            <input type="text" id="atvetelEmelet" name="atvetelEmelet">
+
+                            <input class=button type="submit" value="Kalkuláció">
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="f forms">
+                    <h2>Megtett távolság</h2>
+                    <div id="outputTav">adat1</div>
+                    <h2>Szállítás ára</h2>
+                    <div id="outputAr">adat2</div>
+                </div>
+                <!--Kalkuláció gomb--------------------------------------->
+
+        </form>
+
+
+
+    </main>
+
+    <footer>
+    </footer>
+
+</body>
+
+
+
+</html>
