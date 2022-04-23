@@ -24,30 +24,30 @@ input {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    max-height: 99vh;
+    
     
 }
 
 .forms {
 
-max-width: 400px;
-    padding: 7px;
+max-width: 420px;
+    padding: 8px;
     margin-top: 10px;
     
 }
 
 #feladas {
     background-color: rgb(250, 201, 110);
-    border-style: solid;
-    border-width: 2px;
-    margin-left: 20%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+   
+    margin-left: 35%;
 }
 
 #atvetel {
     background-color: rgb(148, 148, 249);
-    border-style: solid;
-    border-width: 2px;
-    margin-left: 20%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    
+    margin-left: 35%;
 }
 
 .button {
@@ -56,35 +56,50 @@ max-width: 400px;
     background-color:  rgb(250, 201, 110);
     padding: 10px;
     margin-left: 60px;
-    margin-top: 40px;
+    
 }
 
 .button:hover {
     box-shadow: 2px 3px rgb(86, 86, 86);
-    
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     background-color:  rgb(250, 201, 110);
 }
 
 .button:active {
-    transform: translateY(4px);
-    box-shadow: 2px 3px rgb(86, 86, 86);
-    background-color: rgb(236, 236, 236);
+    transform: translateY(2px);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    background-color: rgb(255, 166, 0);
 }
 
 .insidecontainer {
     display: flex;
+    
     justify-content: center;
     align-items: flex-start;
     gap: 10px;
 }
 
 .f{
-    margin-left: 0;
-    margin-right: 20%;
-   height: 91vh;
+    margin-left: 35%;
+
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     background-color: rgb(152, 219, 141);
-    border-style: solid;
-    border-width: 2px;
+   
     text-align: center;
    
+}
+
+h2{
+    font-size: 18px;
+    text-decoration: none;
+    padding: 0;
+    margin-top:0;
+    text-align: center;
+
+}
+
+h3{
+    margin-top: 15px;
+    margin-bottom:0;
+
 }
