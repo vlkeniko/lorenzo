@@ -22,7 +22,6 @@ input {
 
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 
@@ -50,21 +49,25 @@ input {
 .button {
     border: none;
     background-color: rgb(250, 201, 110);
+    box-shadow: 0 1px 5px rgb(0 0 0 / 0.2);
     padding: 10px;
     margin-left: 60px;
+    font-weight: bold;
 
 }
 
 .button:hover {
     box-shadow: 2px 3px rgb(86, 86, 86);
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.2);
     background-color: rgb(250, 201, 110);
+    font-weight: bold;
 }
 
 .button:active {
     transform: translateY(2px);
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     background-color: rgb(255, 166, 0);
+    font-weight: bold;
 }
 
 .insidecontainer {
@@ -113,3 +116,18 @@ h3 {
     font-weight: bold;
     color: darkblue;
 }
+
+@media only screen and (max-width: 600px) {
+   .forms{
+       width: 90%;
+       margin-left: 5%;
+       margin-right: 5%;
+   }
+
+   input[type=text] {
+    width: 150px;
+    padding: 2px 4px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+  }
