@@ -82,6 +82,10 @@ max-width: 400px;
 .f{
     margin-left: 0;
     margin-right: 20%;
-    margin-top: 15%;
+   height: 91vh;
+    background-color: rgb(152, 219, 141);
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
    
 }
