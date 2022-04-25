@@ -1,32 +1,29 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(255, 255, 255);
 }
 
 input[type=text] {
     width: 200px;
     padding: 2px 4px;
-    margin: 8px 0;
+    margin: 2px 0;
     box-sizing: border-box;
+    border: 2px solid rgb(0, 69, 196);
+    border-radius: 4px;
 }
 
 label {
     float: top;
+    font-size: 13px;
+    padding: 0px;
+
 }
 
 input {
     display: block;
 }
 
-.formbox {
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-
-}
 
 .forms {
     width: 420px;
@@ -35,24 +32,31 @@ input {
 
 }
 
-#feladas {
-    background-color: rgb(250, 201, 110);
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+
+
+#tomeg{
+
+    border: 2px solid rgb(0, 69, 196);
+    border-radius: 4px;
+    padding: 4px;
+    width: 60px;
+    height: 18px;
+   margin-left: 5px;
 }
 
-#atvetel {
-    background-color: rgb(148, 148, 249);
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
-}
 
 .button {
+    display:block;
+    margin-right:auto;
+    margin-left: auto;
     border: none;
-    background-color: rgb(250, 201, 110);
-    box-shadow: 0 1px 5px rgb(0 0 0 / 0.2);
+    background-color: rgb(253, 164, 0);
     padding: 10px;
-    margin-left: 60px;
+    margin-top: 10px;
     font-weight: bold;
+    border-radius: 5px;
 
 }
 
@@ -62,6 +66,7 @@ input {
     background-color: rgb(250, 201, 110);
     font-weight: bold;
 }
+
 
 .button:active {
     transform: translateY(2px);
@@ -77,29 +82,17 @@ input {
     gap: 10px;
 }
 
-.f {
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    background-color: rgb(152, 219, 141);
-    text-align: center;
-    width: 420px;
-}
 
-h2 {
-    font-size: 18px;
-    text-decoration: none;
-    padding: 0;
-    margin-top: 0;
-    text-align: center;
 
-}
 
 h3 {
     margin-top: 15px;
     margin-bottom: 0;
+    text-transform: uppercase;
 
 }
 
-#outputTav{
+#outputTav {
 
     font-size: 16;
     text-align: left;
@@ -108,7 +101,7 @@ h3 {
     color: darkblue;
 }
 
-#outputAr{
+#outputAr {
 
     font-size: 16;
     text-align: left;
@@ -117,17 +110,131 @@ h3 {
     color: darkblue;
 }
 
-@media only screen and (max-width: 600px) {
-   .forms{
-       width: 90%;
-       margin-left: 5%;
-       margin-right: 5%;
-   }
+@media only screen and (min-width: 1041px) {
 
-   input[type=text] {
-    width: 150px;
-    padding: 2px 4px;
-    margin: 8px 0;
-    box-sizing: border-box;
+    .formbox {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(250, 250, 250);
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        border-radius: 10px;
+        float: center;
+        margin-left: 28%;
+        margin-right: 28%;
+    }
+
+    h2 {
+        font-size: 18px;
+        text-decoration: none;
+        padding: 0;
+        margin-top: 0;
+        text-align: left;
+        text-transform: uppercase;
+    
+    }
+
+    .f{
+        background:rgb(253, 237, 208);
+        margin-bottom: 10px;
+    }
+
+
+
 }
-  }
+
+
+@media only screen and (max-width: 1040px) {
+
+    .formbox {
+        margin-left: 8%;
+        margin-right: 8%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(250, 250, 250);
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        border-radius: 10px;
+        float: center;
+    }
+
+    h2 {
+        font-size: 18px;
+        text-decoration: none;
+        padding: 0;
+        margin-top: 0;
+        text-align: center;
+        text-transform: uppercase;
+    
+    }
+
+    .f{
+        background:rgb(253, 237, 208);
+        margin-bottom: 10px;
+        max-width: 1040px;
+    }
+}
+
+
+
+@media only screen and (max-width: 700px) {
+
+    .formbox {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    input[type=text] {
+        width: 150px;
+        padding: 2px 4px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+
+    h2 {
+        font-size: 18px;
+        text-decoration: none;
+        padding: 0;
+        margin-top: 0;
+        text-align: center;
+        text-transform: uppercase;
+    
+    }
+
+    .f{
+        background:rgb(253, 237, 208);
+        margin-bottom: 10px;
+        max-width: 300px;
+    }
+
+    #tomeg{
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .forms{
+         width: 300px;
+    }
+}
+
+.credits{
+    font-size: 10px;
+    bottom: 0;
+    text-align: center;
+}
+
+.height{
+
+    height: 20px;
+}
+
+.outputs{
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 20px;
+
+}
