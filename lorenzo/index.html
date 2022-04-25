@@ -12,7 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
-    <title>LorenzoLogistic</title>
+    <title>Lorenzo Logistic Kalkulátor</title>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -29,22 +30,22 @@
                     <div class="insidecontainer">
                         <div class="inside">
                             <label for="feladasOrszag">Ország</label>
-                            <input type="text" id="countries" list="countries" name="feladasOrszag">
+                            <input type="text" id="feladasOrszag" list="countries" name="feladasOrszag" value="Magyarorszég">
 
                             <label for="feladasMegye">Megye</label>
-                            <input type="text" id="feladasMegye" name="feladasMegye">
+                            <input type="text" id="feladasMegye" name="feladasMegye" value="">
 
                             <label for="feladasUtca">Utca, házszám</label>
-                            <input type="text" id="feladasUtca" name="feladasUtca">
+                            <input type="text" id="feladasUtca" name="feladasUtca" value="Szirtes ut 8.">
 
                         </div>
                         <div class="inside">
 
                             <label for="feladasVaros">Város</label>
-                            <input type="text" id="feladasVaros" name="feladasVaros">
+                            <input type="text" id="feladasVaros" name="feladasVaros" value="Budapest">
 
                             <label for="feladasIr">Irányítószám</label>
-                            <input type="text" id="feladasIr" name="feladasIr">
+                            <input type="text" id="feladasIr" name="feladasIr" value="1016">
 
                             <label for="feladasEmelet">Emelet, kapu, ajtó...</label>
                             <input type="text" id="feladasEmelet" name="feladasEmelet">
@@ -57,53 +58,45 @@
                     <div class="insidecontainer">
                         <div class="inside">
                             <label for="atvetelOrszag">Ország</label>
-                            <input type="text" id="atvetelOrszag" name="atvetelOrszag">
-
-
-
+                            <input type="text" id="atvetelOrszag" name="atvetelOrszag" value="Spain">
                             <label for="atvetelMegye">Megye</label>
                             <input type="text" id="atvetelMegye" name="atvetelMegye">
 
                             <label for="atvetelUtca">Utca, házszám</label>
-                            <input type="text" id="atvetelUtca" name="atvetelUtca">
+                            <input type="text" id="atvetelUtca" name="atvetelUtca" value="Calle Ronda del Castillo 6.">
                         </div>
                         <div class="inside">
 
                             <label for="atvetelVaros">Város</label>
-                            <input type="text" id="atvetelVaros" name="atvetelVaros">
+                            <input type="text" id="atvetelVaros" name="atvetelVaros" value="Alicante">
 
                             <label for="atvetelIr">Irányítószám</label>
-                            <input type="text" id="atvetelIr" name="atvetelIr">
+                            <input type="text" id="atvetelIr" name="atvetelIr" value="03004">
 
                             <label for="atvetelEmelet">Emelet, kapu, ajtó...</label>
                             <input type="text" id="atvetelEmelet" name="atvetelEmelet">
 
-                            <input class=button type="submit" value="KALKULÁCIÓ">
+                            <input class="button" type="button" id="runCalc" value="KALKULÁCIÓ">
                         </div>
                     </div>
-
-
-
                 </div>
                 <div class="f forms">
-                    <h3>Megtett távolság</h3>
-                    <div id="outputTav">adat1</div>
-                    <h3>Szállítás ára</h3>
-                    <div id="outputAr">adat2</div>
+                    <div id="map">Map</div>
+                    <label>Távolság:</label>
+                    <span id="outputTav">-</span><br/>
+                    <label>Tömeg:</label>
+                    <input type="number" id="tomeg" name="tomeg" value="20"><br />
+                    <label>Szállítás ára:</label>
+                    <span id="outputAr">-</span>
                 </div>
-                <!--Kalkuláció gomb--------------------------------------->
-
+            </div>
         </form>
-
-
-
     </main>
-
     <footer>
+        Credits: TODO
     </footer>
-
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-2LwG7Rbv_xS_L8_SRwlROfRAtEYWAfA&callback=initMap&v=weekly"
+        defer></script>
 </body>
-
-
-
 </html>
