@@ -79,13 +79,7 @@ h3 {
     text-transform: uppercase;
 }
 
-#outputTav {
-    font-size: 16;
-    font-weight: bold;
-    color: darkblue;
-}
-
-#outputAr {
+#outputTav, #outputArBr, #outputArNet {
     font-size: 16;
     font-weight: bold;
     color: darkblue;

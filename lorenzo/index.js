@@ -57,7 +57,13 @@ function calculateAndDisplayRoute(directionsService, directionsRenderer) {
 var distance = 0;
 function calcPrice() {
     const tomeg = document.getElementById('tomeg').value;
-    document.getElementById('outputAr').innerText = Math.ceil(tomeg * (distance / 1000) * 0.01 + 10) + ' Euro';
+    const AFA = 1.27;
+    const MinBrutto = 50;
+    var brutto = Math.ceil(tomeg * (distance / 1000) * 0.01 * AFA + 10);
+    if(brutto < MinBrutto)
+        brutto = MinBrutto;
+    document.getElementById('outputArBr').innerText = brutto + ' Euro';
+    document.getElementById('outputArNet').innerText = (brutto/AFA).toFixed(2) + ' Euro';
 }
 
 window.initMap = initMap;
