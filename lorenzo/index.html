@@ -19,10 +19,12 @@
 <body>
 
     <header>
+        <a href="https://lorenzologistic.com/">
+            <img src="lor.jpg" alt="logo">
+        </a>
     </header>
 
     <main>
-       <a href="https://lorenzologistic.com/"> <img src="lor.jpg" alt="logo" style="width:200px;"></a>
         <form>
             <div class="formbox">
                 <!--Feladás----------------------------------------------->
@@ -78,22 +80,42 @@
                         </div>
                     </div>
                 </div>
-                <div class="tomeg forms"><h2>Tömeg(kg):</h2>
-                    <input type="number" id="tomeg" name="tomeg" value="20"><br />
+                <div class="tomeg forms">
+      <!--              <h2 style="display: inline-block;">Tömeg(kg):</h2>
+                    <input type="number" id="tomeg" name="tomeg" value="20" style="display: inline-block;">-->
                     
                             <!-- <label for="atvetelEmelet">Emelet, kapu, ajtó...</label>
                             <input type="text" id="atvetelEmelet" name="atvetelEmelet">-->
 
-                            <input class="button" type="button" id="runCalc" value="KALKULÁCIÓ">
+                    <input class="button" type="button" id="runCalc" value="KALKULÁCIÓ" />
                 </div>
-                <div class="f forms">
-                    <div id="map">Map</div>
-                    <label class="outputs">Távolság:</label>
-                    <span id="outputTav">-</span><br /><br />
-
-                    <label class="outputs">Szállítás ára:</label>
-                    <span id="outputAr">-</span>
+                <div class="f forms" style="display: table;">
+                    <div class="tableRow">
+                        <div class="tableCell">
+                            <label class="outputs">Távolság:</label>
+                        </div>
+                        <div class="tableCell">
+                            <span id="outputTav">-</span>
+                        </div>
+                    </div>
+                    <div class="tableRow">
+                        <div class="tableCell">
+                            <label class="outputs">Tömeg(kg):</label>
+                        </div>
+                        <div class="tableCell">
+                            <input type="number" min="1" id="tomeg" name="tomeg" value="20">
+                        </div>
+                    </div>
+                    <div class="tableRow">
+                        <div class="tableCell">
+                            <label class="outputs">Szállítás ára:</label>
+                        </div>
+                        <div class="tableRow">
+                            <span id="outputAr">-</span>
+                        </div>
+                    </div>
                 </div>
+                <div id="map"></div>
             </div>
         </form>
     </main>
@@ -101,7 +123,7 @@
         <div class="height"></div>
         <p class="credits">Credits: <a href="https://www.instagram.com/vlkeniko/">Eniko Valko</a>, <a href="https://www.facebook.com/daniel.carving">Daniel Valko</a></p>
     </footer>
-    <script src="https://maps.googleapis.com/maps/api/js?key=xyz&callback=initMap&v=weekly" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=TITOK&callback=initMap&v=weekly" defer></script>
 </body>
 
 </html>

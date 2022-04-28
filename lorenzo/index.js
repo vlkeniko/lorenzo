@@ -12,13 +12,17 @@ function initMap() {
     document.getElementById("runCalc").addEventListener("click", function () {
         calculateAndDisplayRoute(directionsService, directionsRenderer);
     });
-    document.getElementById('tomeg').addEventListener('keyup', calcPrice);
+    const tomegElt = document.getElementById('tomeg');
+    tomegElt.addEventListener('keyup', calcPrice);
+    tomegElt.addEventListener('click', calcPrice);
+    tomegElt.addEventListener('focus', calcPrice);
+    tomegElt.addEventListener('change', calcPrice);
 }
 
 function calculateAndDisplayRoute(directionsService, directionsRenderer) {
     function getAddress(prefix) {
         var result = [];
-        const fields = ['Orszag', 'Ir', 'Megye', 'Varos', 'Utca'];
+        const fields = ['Orszag', 'Ir', /*'Megye',*/ 'Varos', 'Utca'];
         fields.forEach((field => result.push(document.getElementById(prefix+field).value)))
         return result.join(' ');
     }

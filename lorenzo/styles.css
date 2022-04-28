@@ -3,6 +3,10 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+header {
+    text-align: center;
+}
+
 input[type=text] {
     width: 200px;
     padding: 2px 4px;
@@ -16,39 +20,28 @@ label {
     float: top;
     font-size: 13px;
     padding: 0px;
-
 }
 
 input {
     display: block;
 }
 
-
-
 .forms {
-    width: 420px;
+    width: 400px;
     padding: 8px;
     margin-top: 10px;
-
 }
 
-
-
-
-#tomeg{
-
+#tomeg {
     border: 2px solid rgb(0, 69, 196);
     border-radius: 4px;
-    padding: 4px;
-    width: 60px;
-    height: 18px;
+    padding: 2px;
    margin-left: 5px;
 }
 
-
-
 .button {
     display:block;
+    margin-top: 0;
     margin-right:auto;
     margin-left: auto;
     border: none;
@@ -57,7 +50,6 @@ input {
     margin-top: 10px;
     font-weight: bold;
     border-radius: 5px;
-
 }
 
 .button:hover {
@@ -66,7 +58,6 @@ input {
     background-color: rgb(250, 201, 110);
     font-weight: bold;
 }
-
 
 .button:active {
     transform: translateY(2px);
@@ -82,30 +73,20 @@ input {
     gap: 10px;
 }
 
-
-
-
 h3 {
     margin-top: 15px;
     margin-bottom: 0;
     text-transform: uppercase;
-
 }
 
 #outputTav {
-
     font-size: 16;
-    text-align: left;
-    padding-left: 31%;
     font-weight: bold;
     color: darkblue;
 }
 
 #outputAr {
-
     font-size: 16;
-    text-align: left;
-    padding-left: 31%;
     font-weight: bold;
     color: darkblue;
 }
@@ -136,13 +117,10 @@ h3 {
     
     }
 
-    .f{
-        background:rgb(253, 237, 208);
+    .f {
+        background: rgb(253, 237, 208);
         margin-bottom: 10px;
     }
-
-
-
 }
 
 
@@ -171,8 +149,8 @@ h3 {
     
     }
 
-    .f{
-        background:rgb(253, 237, 208);
+    .f {
+        background: rgb(253, 237, 208);
         margin-bottom: 10px;
         max-width: 1040px;
     }
@@ -204,37 +182,44 @@ h3 {
     
     }
 
-    .f{
-        background:rgb(253, 237, 208);
+    .f {
+        background: rgb(253, 237, 208);
         margin-bottom: 10px;
         max-width: 300px;
     }
-
-    #tomeg{
-
-        margin-left: auto;
-        margin-right: auto;
     }
 
-    .forms{
-         width: 300px;
-    }
+#tomeg {
+    width: 60px;
+    margin-left: 0px;
 }
 
-.credits{
-    font-size: 10px;
+.credits {
+    font-size: 16px;
     bottom: 0;
     text-align: center;
 }
 
-.height{
-
+.height {
     height: 20px;
 }
 
-.outputs{
+.outputs {
     font-size: 16px;
     font-weight: bold;
-    padding-bottom: 20px;
+}
 
+div.f {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+div.tableRow {
+    display: table-row;
+}
+
+div.tableCell {
+    display: table-cell;
+    width: 50%;
+    padding-bottom: 8px;
 }
